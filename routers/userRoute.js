@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const { registerUser, loginUser, getAllUsers, deleteUser } = require('../controllers/userController');
-const { requireAuth } = require('../middleware/authMiddleware'); // Ensure this middleware is implemented correctly
+const {requireAuth} = require('../middleware/authMiddleware'); // Ensure this middleware is implemented correctly
 
 router.post('/register', registerUser);
 router.post('/login', loginUser);
